@@ -18,8 +18,10 @@ struct ContentView: View {
         
         ZStack {
             
-            Image("background")
-                .ignoresSafeArea()
+            Color.blue.ignoresSafeArea(.all)
+            
+            //Image("background")
+                //.ignoresSafeArea()
             
             VStack{
                 
@@ -65,7 +67,7 @@ struct ContentView: View {
                     Spacer()
                     VStack {
                         Text("Player")
-                            .font(.largeTitle)
+                            .font(.title2)
                             .foregroundColor(Color.white)
                             .padding(.bottom, 10.0)
                         Text(String(playerScore))
@@ -75,7 +77,7 @@ struct ContentView: View {
                     Spacer()
                     VStack {
                         Text("CPU")
-                            .font(.largeTitle)
+                            .font(.title2)
                             .foregroundColor(Color.white)
                             .padding(.bottom, 10.0)
                         Text(String(cpuScore))
